@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * mode service.
+ * event service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::mode.mode');
+module.exports = createCoreService('api::event.event');

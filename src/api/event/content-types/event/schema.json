@@ -1,10 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "eventses",
+  "collectionName": "events",
   "info": {
-    "singularName": "events",
-    "pluralName": "eventses",
-    "displayName": "events"
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "events",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,8 @@
       "type": "string"
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "name"
     },
     "venue": {
       "type": "string"
@@ -36,13 +38,14 @@
       "type": "richtext"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "user": {
       "type": "relation",
